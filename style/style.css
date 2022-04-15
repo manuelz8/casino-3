@@ -38,7 +38,7 @@ body{
 }
 
 .sign-up{
-    background-color: #8C52FF;
+    background-color:  rgba(104, 7, 9);
     border: #FCD139 solid 2px;
     border-radius: 15px;
     transition: ease 0.5s;
@@ -49,7 +49,6 @@ body{
 
 .sign-up:hover{
     transform: scale(1.1);
-    background-color: #A31426;
 }
 /*Banner*/
 
@@ -60,7 +59,6 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url();
     background-repeat: repeat;
     overflow: hidden;
 }
@@ -553,4 +551,12 @@ footer{
 
 #about:checked ~ .pop-up{
     display: flex;
+}
+
+#game:checked ~ .pop-up{
+    display: flex;
+}
+
+#close:checked ~ .pop-up{
+    display: none;
 }
