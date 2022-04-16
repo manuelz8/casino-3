@@ -33,12 +33,12 @@ body{
     width: 100%;
 }
 
-.game-hover input{
+.game-item input{
     display: none;
 }
 
 .sign-up{
-    background-color:  rgba(104, 7, 9);
+    background-color: #8C52FF;
     border: #FCD139 solid 2px;
     border-radius: 15px;
     transition: ease 0.5s;
@@ -49,6 +49,7 @@ body{
 
 .sign-up:hover{
     transform: scale(1.1);
+    background-color: #A31426;
 }
 /*Banner*/
 
@@ -59,6 +60,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url();
     background-repeat: repeat;
     overflow: hidden;
 }
@@ -243,21 +245,6 @@ body{
     background-color: #0000009c;
 }
 
-.game-hover{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 47px;
-    opacity: 0;
-    visibility: hidden;
-    transition: ease-in-out 0.3s;
-    overflow: hidden;
-    background-color: #0000009c;
-}
-
 .game-item:hover .game-hover{
     opacity: 1;
     visibility: visible;
@@ -320,13 +307,13 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: absolute;
     background-color: #461648;
     box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
     transition: ease 0.5s;
     padding: 20px;
-    border-radius: 30px;
     margin: 40px;
+    z-index: 10;
 }
 
 .pop-up__container iframe{
@@ -551,12 +538,4 @@ footer{
 
 #about:checked ~ .pop-up{
     display: flex;
-}
-
-#game:checked ~ .pop-up{
-    display: flex;
-}
-
-#close:checked ~ .pop-up{
-    display: none;
 }
